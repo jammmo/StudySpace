@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'Agency FB';
+    src: url("agency-fb.ttf");
+}
+
+body {
+    font-family: 'Agency FB';
+    font-size: 5.5vw;
+}
+
+#apptitle {
+    position: fixed;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 8vw;
+    text-align: center;
+    width: 100%;
+    top: calc(8.5vh - 6vmax);
+}
+
+table {
+    /*background-color: yellow;*/
+    position: fixed;
+    top: 8vmax;
+    left: 0;
+    width: 92vw;
+}
+
+tr td {
+    vertical-align: bottom;
+    height: 7vh;
+}
+
+tr td:first-child {
+    width: 23%;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 2vw;
+    border-bottom: 0.4vw solid transparent;
+}
+
+tr td:nth-child(2) {
+    color: gray;
+    border-bottom: 0.4vw solid gray;
+}
+
+tr td:nth-child(2)::after {
+    content: '';
+    position: fixed;
+    right: 7vw;
+    transform: translateY(420%);
+    border-top: .8vw solid transparent;
+    border-bottom: .8vw solid transparent;
+    border-left: 1.6vw solid gray;
+  }
+
+tr td:nth-child(2) > div {
+    background-image: url(yellowoutline.png);
+    background-size: 7vw;
+    background-repeat: no-repeat;
+    transform: translateY(-66%);
+    width: 10vw;
+    height: 10vw;    
+    position: fixed;
+}
+
+tr td:nth-child(2) > div:nth-of-type(1) {
+    left: 66vw;
+}
+
+tr td:nth-child(2) > div:nth-of-type(2) {
+    left: 75vw;
+}
+
+tr td:nth-child(2) > div:nth-of-type(3) {
+    left: 84vw;
+}
